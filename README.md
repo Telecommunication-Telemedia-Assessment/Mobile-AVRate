@@ -3,7 +3,10 @@
 AVrate is a tool to conduct audiovisual evaluation experiments on iOS.
 It performs the playback of audiovisual content and then asks test persons to rate it. Inputs can be sliders, to rate on a position on a scale, or buttons, which can be clicked. Additionally, timing information about keyboard pressing can be used for detection tests. 
 
-The playback will be executed by the system video player or on a remote computer running AVrate.
+The playback will be executed by the system video player on the mobile device running this application or on a remote computer running AVrate.
+
+The application is functional and can be used for testing. However, the configuration of the test interface from the tablet is still work in progress. Currently, the preferred way to configure a new test is by using the PC version of AVRate (see below). 
+
 
 
 # Installation
@@ -47,7 +50,7 @@ ffmpeg -i BigBuckBunny_640x360.m4v -vcodec copy -acodec copy -metadata title="he
 - If iOSAVRate is used as a remote of AVRate Server, and if the server (Window PC) running AVRate use a local (language) where floating numbers are separated with a coma (like French where PI is written 3,14159...), this will result in a freeze of the mobile application when submitting subjective scores... (iOSAVRate use a dot in floating number ; PI is written 3.14159... )
 - AVRate server does not stop when the window is closed while it wait for a Tablet. The current solution is to kill the processus though the task manager...
 
-# todo
+# ToDo
 + Remove the clock on the top of the device when a video is played.
 + Mobile application in standalone crashes if there is no video in the library.
 + Customize interface from the device
